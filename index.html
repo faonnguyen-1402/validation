@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="text-validation">SUPER VALIDATION</div>
+    <div class="contain-form">
+      <form class="register-form" id="formId" novalidate>
+        <div class="validate-form">😤 Register 😤</div>
+        <p>Create an account for you. It's free and only takes a minute</p>
+        <div class="input-form">
+          <label for="firstNameId" class="form-label">First Name</label>
+          <input
+            type="text"
+            id="firstNameId"
+            class="input"
+            required
+            maxlength="30"
+          />
+          <div class="error hide" id="first-error"></div>
+
+          <label for="lastNameId" class="form-label">Last Name</label>
+          <input
+            type="text"
+            id="lastNameId"
+            class="input"
+            required
+            maxlength="30"
+          />
+          <div class="error hide" id="second-error"></div>
+        </div>
+        <div class="input-form">
+          <label for="emailId" class="form-label">Your Email</label>
+          <input
+            type="email"
+            id="emailId"
+            class="input"
+            required
+            maxlength="30"
+          />
+          <div class="error hide" id="third-error"></div>
+        </div>
+        <div class="input-form">
+          <label for="passwordId" class="form-label">Your Password</label>
+          <input
+            type="password"
+            id="passwordId"
+            class="input"
+            required
+            maxlength="30"
+          />
+          <div class="error hide" id="fourth-error"></div>
+        </div>
+        <div class="input-form">
+          <label for="confirmPasswordId" class="form-label"
+            >Confirm Password</label
+          >
+          <input
+            type="password"
+            id="confirmPasswordId"
+            class="input"
+            required
+            maxlength="30"
+          />
+          <div class="error hide" id="fifth-error"></div>
+        </div>
+        <div class="checkbox-form">
+          <input type="checkbox" id="checkboxId" class="checkbox" />
+          <label for="checkboxId"
+            >I accept the
+            <a
+              class="policy"
+              href="https://termly.io/resources/articles/privacy-policy-vs-terms-and-conditions/#:~:text=The%20difference%20between%20a%20privacy,rules%20for%20using%20your%20site."
+            >
+              Terms of use</a
+            >
+            and
+            <a
+              class="policy"
+              href="https://termly.io/resources/articles/privacy-policy-vs-terms-and-conditions/#:~:text=The%20difference%20between%20a%20privacy,rules%20for%20using%20your%20site."
+              >Privacy Policy</a
+            >.
+          </label>
+        </div>
+
+        <div class="submit-form">
+          <button id="submitButtonId" type="submit" class="submit-button">
+            Register now
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="/index.js"></script>
+  </body>
+</html>

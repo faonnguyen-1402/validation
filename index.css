@@ -1,0 +1,150 @@
+* {
+  font-family: sans-serif;
+}
+
+p {
+  text-align: center;
+}
+
+.text-validation {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 45px;
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+.register-form {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  width: 55%;
+  border-radius: 4px;
+  background: linear-gradient(to right, #30cfd09c 0%, #33086745 100%);
+  font-size: 17px;
+  box-shadow: 0 0 20px 12px rgb(8 8 9 / 40%);
+  flex-direction: column;
+}
+
+.validate-form {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.contain-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.input-form {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* align-items: baseline; */
+  flex-direction: column;
+}
+
+.input {
+  height: 40px;
+  margin: 10px;
+}
+
+.validated .input:invalid {
+  border: 4px solid red;
+}
+
+.validated .input:valid {
+  border: 4px solid rgb(11 124 229 / 86%);
+}
+
+.form-label {
+  margin-left: 10px;
+}
+
+.checkbox {
+  margin: 10px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.checkbox-form {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* align-items: baseline; */
+  font-size: 20px;
+
+  align-items: center;
+}
+/* .password-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.email-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+} */
+
+.policy {
+  text-decoration: none;
+  color: #f300b8;
+}
+
+.submit-form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+.submit-button {
+  color: white;
+  background-color: green;
+  height: 40px;
+  font-size: 20px;
+  width: 80%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+  .text-validation {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 30px;
+    background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  .validate-form {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.error {
+  position: relative;
+  top: -10px;
+  color: #f70000;
+  left: 10px;
+}
+
+.show {
+  display: inline-block;
+}
+
+.hide {
+  display: none;
+}
